@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Load dataset day
-day = pd.read_csv("data/day.csv")
+day = pd.read_csv("dashboard/main_data.csv")
 
 # Mengubah tipe data
 day["dteday"] = pd.to_datetime(day["dteday"])
@@ -45,8 +45,6 @@ weatherMap = {
 }
 
 filtered_data["weathersit"] = filtered_data["weathersit"].map(weatherMap)
-
-# Fungsi untuk visualisasi
 
 
 def weatherImpact():
